@@ -1,0 +1,120 @@
+.clear {
+  clear: both;
+}
+.box {
+  float: left;
+  margin: 10px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: palevioletred;
+}
+.box .item {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 1.5px;
+}
+.b2 {
+  justify-content: center;
+}
+.b3 {
+  justify-content: flex-end;
+}
+.b4 {
+  align-items: center;
+}
+.b5 {
+  align-items: center;
+  justify-content: center;
+}
+.b6 {
+  align-items: flex-end;
+  justify-content: center;
+}
+.b7 {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.b8 {
+  justify-content: space-between;
+}
+.b9.box {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.b10.box {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.b10.box {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.b11.box {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.b12.box {
+  flex-direction: column;
+}
+.b12 .item:nth-child(2) {
+  align-self: center;
+}
+.b13.box {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.b13 .item:nth-child(2) {
+  align-self: flex-end;
+}
+.b14 {
+  justify-content: space-between;
+}
+.b14 .item:nth-child(2) {
+  align-self: center;
+}
+.b14 .item:nth-child(3) {
+  align-self: flex-end;
+}
+.b15 {
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+.box.b16 {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.box.b17 {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.box.b18 {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.b18 .column {
+  flex-direction: column;
+}
+.box.b19 {
+  flex-wrap: wrap;
+}
+.b19 .column:nth-child(2) {
+  justify-content: center;
+}
+.b20 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
