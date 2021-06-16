@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-width: 600px;
+    }
+    #header, #footer {
+      height: 20px;
+      text-align: center;
+      border: 1px solid deeppink;
+      background: gray;
+    }
+    .middle {
+      background-color: pink;
+      float: left;
+      width: 100%;
+    }
+    .left, .right {
+      float: left;
+    }
+    .left {
+      position: relative;
+      left: -200px;
+      margin-left: -100%;
+      width: 200px;
+      background-color: yellow;
+    }
+    .right {
+      position: relative;
+      right: -200px;
+      margin-left: -200px;
+      width: 200px;
+      background-color: yellow;
+    }
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    #content {
+      padding: 0 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="content" class="clearfix">
+    <div class="middle">middle</div>
+    <div class="left">
+      left left left lef tlef
+      left left lef tlef tlef tleftl eftl eft l eft left
+      left left lef tlef tlef tleftl eftl eft l eft left
+      left left lef tlef tlef tleftl eftl eft l eft left
+      left left lef tlef tlef tleftl eftl eft l eft left
+
+    </div>
+    <div class="right">right</div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

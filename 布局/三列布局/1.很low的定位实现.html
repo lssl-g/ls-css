@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+    1 两边固定 当中自适应 
+    2 当中列要完整显示
+  -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div { 
+      height: 100px;
+    }
+    body {
+      min-width: 600px;
+      position: relative;
+    }
+    #left, #right {
+      width: 200px;
+      background: pink;
+      position: absolute;
+      top: 0;
+    }
+    #middle {
+      background: deeppink;
+      padding: 0 200px;
+    }
+    #left {
+      left: 0;
+    }
+    #right {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="left">left</div>
+  <div id="middle">middle</div>
+  <div id="right">right</div>
+</body>
+</html>
